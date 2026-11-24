@@ -7,7 +7,7 @@ class Funcionario:
        self.cargo = cargo
 
    def apresentacao(self):
-       print(f":handshake: Olá, meu nome é [blue]{self.nome}[/blue] e sou {self.cargo} do setor {self.setor} da empresa Curso em Vídeo. :briefcase:")  
+       return f":handshake: Olá, meu nome é [blue]{self.nome}[/blue] e sou {self.cargo} do setor {self.setor} da empresa Curso em Vídeo. :briefcase:"
 
 
 
