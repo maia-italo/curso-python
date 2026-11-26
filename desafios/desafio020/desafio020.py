@@ -10,10 +10,10 @@ class Gamer:
    def add_favoritos(self, jogo=''):
       self.jogos = []
       self.jogos.append(jogo)
+      self.jogos.sort()
 
    def ficha(self):
-      self.lista = self.jogos.sort()
-      self.ficha = Panel(f'Nome real: [background = blue][black]{self.nome}[/black]\nJogos favoritos:\n{self.lista}', title=f'Jogador <{self.nick}>', width=60)
+      self.ficha = Panel(f'Nome real: [background = blue][black]{self.nome}[/black]\nJogos favoritos:\n{self.jogos.pop()}', title=f'Jogador <{self.nick}>', width=60)
       print(self.ficha)
 
 
