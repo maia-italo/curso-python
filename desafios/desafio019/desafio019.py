@@ -1,4 +1,5 @@
 from rich import print
+from time import sleep
 
 
 
@@ -17,7 +18,10 @@ class Livro:
             self.atual += 1
             print(f'Pág [white]{self.atual}[/white] ▶ ', end='')
             self.count += 1
+            sleep(0.3)
+
       print(f'Você avançou [white]{self.count}[/white] páginas e agora está na [yellow]página {self.atual}[/yellow]')
+      sleep(0.5)
       if self.atual == self.pag:
          print(f':closed_book: [red]Você chegou ao final do livro "{self.titulo}"[/red]')
 
