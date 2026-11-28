@@ -7,7 +7,8 @@ class Produto:
       self.preco = preco
    
    def etiqueta(self):
-      print(Panel(f'[white]{self.nome:26}\n{'-'*26}\nR${self.preco:23.2f}[/white]', title='Produto', style='green', width=30))
+      precof = f'R${self.preco:,.2f}'
+      print(Panel(f'[white]{self.nome.center(30)}\n{'-'*30}\n{precof.center(30, ".")}[/white]', title='Produto', style='green', width=34))
 
 
 p1 = Produto("Caneta", 2.50)
